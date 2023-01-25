@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:#5a79d2 ;
+    height:15vh ;
+}
+
+main{
+
+    background-color: aliceblue;
+    min-height: 80vh;
+}
+
+h1{
+    text-align: center;
+    color: #24244c;
+}
+
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+p{
+    padding: 1rem;
+}
+
+footer{
+    background-color: #24244c;
+    min-height: 30vh;
+    color: aliceblue;
+}
+
+.whatsapp{
+    width: 4.5rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+}
