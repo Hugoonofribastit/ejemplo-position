@@ -13,7 +13,6 @@ header a{
     font-size: 135%;
     color: rgb(207, 148, 81);
     text-decoration: none;
-    display: inline-block;
     margin: 16px;
   }
 
@@ -21,6 +20,12 @@ header a{
     color: bisque;
     text-shadow: 2px 2px rgb(207, 148, 81);
     text-decoration: underline;
+  }
+
+  .active{
+    color: bisque;
+    text-shadow: 2px 2px rgb(207, 148, 81);
+    
   }
 
 section{
@@ -70,48 +75,51 @@ footer{
 }
 
 .homero{
-    width: 120px;
+    width: 140px;
     position: absolute;
-    top: 140px;
     right: 350px;
-     /* valores predeterminados transform */
-     transition-duration:1s;
-     transition-timing-function:ease-in ;
-}
-
-.whatsapp{
-    width: 75px;
-    position: fixed;
-    bottom: 42px;
-    right: 42px;
+    top: 140px;
     /* valores predeterminados transform */
-    transition-duration:1s;
-    transition-timing-function:ease-in ;
-    /* valores predeterminados animaciones */
-    animation-name:caja;
-    animation-duration:2s ;
-    animation-iteration-count:1;
-}
+    transition-duration:1s ;
+    transition-timing-function: ease-in;
+    }
 
-.whatsapp:hover{
-    transform: scale(1.2) rotate(-20deg);
-}
+    
+    .whatsapp{
+        width: 75px;
+        position:fixed ;
+        bottom: 42px;
+        right: 42px;
+        /* valores predeterminados transform */
+        transition-duration:1s ;
+        transition-timing-function: ease-in;
+        /* valores predeterminados animaciones */
+        animation-name: caja;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
 
-.homero:hover{
-    transform: scale(3) rotate(360deg);
-}
+    .homero:hover{
+        transform: scale(3) rotate(360deg);
+    }
 
-@keyframes caja{
-    0%{
-        right: -150px;
+    .whatsapp:hover{
+        transform: scale(1.2) rotate(-25deg);
+        
     }
-    33%{
-        right:42px ;
+
+    @keyframes caja{
+        0%{
+            right:-150px;
+        }
+        33%{
+            right:42px;
+        }
+        66%{
+            right:-150px;
+        }
+        100%{
+            right:42px;
+        }
     }
-    66%{
-        right: -150px;
-    }
-    100%{
-        right:42px;
-    }
-}
+    
