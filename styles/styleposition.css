@@ -123,3 +123,28 @@ footer{
         }
     }
     
+    .ordenamiento{
+        list-style-type: square;
+    }
+
+    .tablita{
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    table, th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .altura-celda-img{
+        height: 500px;
+    }
+
+    .fondo{
+        background-color: rgba(255, 255, 0, 0.318);
+    }
+    .fondo-violeta{
+        background-color: purple;
+        color: white;
+    }
